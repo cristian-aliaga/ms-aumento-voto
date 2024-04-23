@@ -1,0 +1,17 @@
+name: CD
+on: 
+    push:
+jobs:
+    build:
+        runs-on:    ubuntu-latest
+        steps:
+            - name: Clonacion de Codigo
+              uses: actions/checkout@v3
+            - name: Setup Java JDK
+              uses: actions/setup-java@v4.2.1
+              with:
+                java-version: '8'
+                distribution: 'temurin'
+            - name: Compilation
+              run:  |
+                mvn package
