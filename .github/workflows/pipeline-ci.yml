@@ -3,7 +3,7 @@ on:
     push:
 jobs:
     build:
-        runs-on: self-hosted
+        runs-on: ubuntu-latest
         steps:
             - name: Clonacion de Codigo
               uses: actions/checkout@v4
@@ -18,7 +18,7 @@ jobs:
               run: |
                     #mvn package
                     echo 'package'
-
+                    
             - name: Test Unitarios
               run: |
                 mvn package test
@@ -47,3 +47,12 @@ jobs:
             - name: Docker Push
               run: |
                 docker push ${{ secrets.DOCKERHUB_USERNAME }}/repo-image:latest
+        
+    deploy:
+            needs: build
+            runs-on: self-hosted
+
+            steps:
+                - name: Despliegue Test Runner
+                  run: |
+                    echo "Depliegue"
