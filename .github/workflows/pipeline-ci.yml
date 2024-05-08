@@ -51,8 +51,11 @@ jobs:
     deploy:
             needs: build
             runs-on: self-hosted
-
+                
             steps:
-                - name: Despliegue Test Runner
+                - name: Clonacion de Codigo
+                  uses: actions/checkout@v4
+                  
+                - name: Despliegue Test Runner Kubernetes
                   run: |
-                    echo "Depliegue"
+                    kubectl apply -f deploy.yaml
