@@ -22,9 +22,7 @@ jobs:
             - name: Analisis SonarCloud 2
               run: |
                 mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:3.11.0.3922:sonar \
-                -Dsonar.token=${{ secrets.GITHUB_TOKEN }} \
+                -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
                 -Dsonar.host.url=https://sonarcloud.io \
                 -Dsonar.organization=cristian-aliaga \
                 -Dsonar.projectKey=cristian-aliaga_ms-aumento-voto
-            
-            
