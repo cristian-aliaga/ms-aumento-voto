@@ -18,6 +18,9 @@ jobs:
               run: |
                     #mvn package
                     echo 'package'
+            - name: Test Unitarios
+              run: |
+                mvn package test
 
             - name: Analisis SonarCloud
               run: |
