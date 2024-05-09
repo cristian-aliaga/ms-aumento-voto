@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ms-aumento-voto
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
         app: ms-aumento-voto
