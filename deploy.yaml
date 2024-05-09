@@ -16,5 +16,5 @@ spec:
         - name: ms-aumento-voto
           image: cristianaliaga/repo-image:latest
           ports:
-          - containerPort: 8080
+          - containerPort: 8081
         
