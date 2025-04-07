@@ -28,8 +28,8 @@ jobs:
                 mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:3.11.0.3922:sonar \
                 -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
                 -Dsonar.host.url=https://sonarcloud.io \
-                -Dsonar.organization=cristian-aliaga-organization \
-                -Dsonar.projectKey=cristian-aliaga_ms-aumento-voto
+                -Dsonar.organization=cristian-aliaga \
+                -Dsonar.projectKey=ms-aumento-voto
             
             - name: Docker Login
               uses: docker/login-action@v3.1.0
