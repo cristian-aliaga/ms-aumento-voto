@@ -1,0 +1,372 @@
+
+1.0ms-aumento-votoJavaFrontend"1743991704889*java2.Bî
+7
+2src/main/java/com/devsecops/NumericController.java2
+
+package4
+
+com.devsecops5
+$
+com.devsecops.NumericController7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+NumericController12
+<
+6org.springframework.web.bind.annotation.RestController14
+
+unknown15
+
+annotated by16
+
+
+uses17
+,
+&com.devsecops.NumericController.logger19
+
+field20
+
+private21
+
+logger22
+
+org.slf4j.Logger24
+
+is type25
+
+returns26
+
+org.slf4j.LoggerFactory28
+
+
+references29
+L
+Forg.slf4j.LoggerFactory#getLogger(Ljava/lang/Class;)Lorg/slf4j/Logger;31
+
+calls32
+-
+'com.devsecops.NumericController.baseURL34
+
+baseURL35
+2
+,com.devsecops.NumericController.restTemplate37
+
+	protected38
+
+restTemplate39
+1
++org.springframework.web.client.RestTemplate41
+-
+'com.devsecops.NumericController$compare43
+
+compare44
+I
+Ccom.devsecops.NumericController$compare#welcome()Ljava/lang/String;46
+
+method47
+
+welcome48
+8
+2org.springframework.web.bind.annotation.GetMapping50
+Q
+Kcom.devsecops.NumericController$compare#compareToFifty(I)Ljava/lang/String;52
+
+compareToFifty53
+:
+4org.springframework.web.bind.annotation.PathVariable55
+;
+5com.devsecops.NumericController$compare#increment(I)I57
+
+	increment58
+-
+'org.springframework.http.ResponseEntity60
+ 
+™org.springframework.web.client.RestTemplate#getForEntity(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;62
+)
+#org.springframework.http.HttpEntity64
+E
+?org.springframework.http.HttpEntity#getBody()Ljava/lang/Object;66
+0
+*org.slf4j.Logger#info(Ljava/lang/String;)V68J
+
+1
+12Z
+
+3	
+354jû
+@
+33:
+333420 *
+1 (	26:3B
+	
+9
+21
+
+
+11
+35
+?
+429
+42438 *
+1 (26:3B
+	
+9
+10
+
+
+11
+44
+
+54
+545515
+
+23
+232415
+
+27
+272815
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+@
+18:
+181920 *
+1 (	26:3B
+	
+9
+21
+
+
+11
+22
+@
+36:
+363720 *
+1 (26:3B
+	
+9
+38
+
+
+11
+39
+A
+51;
+515247 *
+1 (242:3B
+	
+9
+10
+
+
+11
+53
+
+13
+131415
+
+30
+303115
+A
+45;
+454647 *
+1 (242:3B
+	
+9
+10
+
+
+11
+48
+
+63
+636415
+
+65
+656615
+
+49
+495015
+
+59
+596015
+
+67
+676815
+
+40
+404115
+A
+56;
+565747 *
+1& &(242:3B
+	
+9
+10
+
+
+11
+58
+
+61
+616215rØ	
+
+61316*
+1 (
+
+61317*
+1 (
+
+182325*
+1 (
+
+182317*
+1 (
+
+182317*
+1 (
+
+182326*
+1  (-
+
+182729*
+1  (-
+
+183032*
+1. (7
+
+182717*
+1  (-
+
+364025*
+1 (
+
+364017*
+1 (
+
+364017*
+1 (
+
+364032*
+1" (.
+
+421316*
+1 (
+
+421317*
+1 (
+
+454916*
+1 (
+
+454917*
+1 (
+
+514916*
+1 (
+
+514917*
+1 (
+
+515416*
+1  (!
+
+515417*
+1! (-
+
+564916*
+1& &(
+
+564917*
+1& &(
+
+565416*
+1' '(
+
+565417*
+1' '(%
+
+565925*
+1( (()
+
+565917*
+1( ((
+
+565926*
+1(, ((8
+
+564029*
+1(, ((8
+
+566132*
+1(9 ((E
+
+563629*
+1(, ((8
+
+564017*
+1(, ((8
+
+563629*
+1(, ((8
+
+563329*
+1(F ((M
+
+566329*
+1) )($
+
+566532*
+1)% )(,
+
+562329*
+1* *(
+
+
+566732*
+1* *(
+
+561829*
+1* *(
+
+
+562317*
+1* *(
+
+
+561829*
+1* *(
+
+
+562329*
+1+ +(
+
+
+566732*
+1+ +(
+
+561829*
+1+ +(
+
+
+562317*
+1+ +(
+
+
+561829*
+1+ +(

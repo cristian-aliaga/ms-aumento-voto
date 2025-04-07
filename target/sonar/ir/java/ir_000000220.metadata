@@ -1,0 +1,7 @@
+com.devsecops.NumericController#instance-init#
+false
+4d7a38c63e579e884b878ff05659e927
+java.lang.Object#getClass()Ljava/lang/Class;
+org.slf4j.LoggerFactory#getLogger(Ljava/lang/Class;)Lorg/slf4j/Logger;
+org.springframework.web.client.RestTemplate#<init>()V
+org.springframework.web.client.RestTemplate#instance-init#

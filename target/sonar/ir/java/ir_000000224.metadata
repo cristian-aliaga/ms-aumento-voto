@@ -1,0 +1,4 @@
+com.devsecops.NumericApplication#main([Ljava/lang/String;)V
+false
+f39868952357128f183a154f716aa449
+org.springframework.boot.SpringApplication#run(Ljava/lang/Class;[Ljava/lang/String;)Lorg/springframework/context/ConfigurableApplicationContext;
