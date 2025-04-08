@@ -64,4 +64,4 @@ jobs:
                   uses: actions/checkout@v3
                 - name: Despliegue Test Runner Kubernetes
                   run: |
-                    kubectl apply -f deploy.yaml --validate=false
+                    kubectl apply -f deploy.yaml --validate=false --insecure-skip-tls-verify=true
