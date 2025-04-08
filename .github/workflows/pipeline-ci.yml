@@ -6,7 +6,7 @@ on:
       - main
   pull_request:
     branches:
-      - main # Ejecuta el flujo de trabajo en cada pull request a la rama main
+      - main
     
 jobs:
     build:
@@ -62,7 +62,9 @@ jobs:
             steps:
                 - name: Clonacion de Codigo
                   uses: actions/checkout@v3
-
+                - name: Validate Kubernetes Manifests
+                  run: |
+                    kubectl apply --dry-run=client -f deploy.yaml
                 - name: Despliegue Test Runner Kubernetes
                   run: |
                     kubectl apply -f deploy.yaml --validate=false --insecure-skip-tls-verify=true
