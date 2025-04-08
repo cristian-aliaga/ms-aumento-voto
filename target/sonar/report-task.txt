@@ -1,7 +1,0 @@
-organization=cristian-aliaga
-projectKey=ms-aumento-voto
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.61474
-dashboardUrl=https://sonarcloud.io/dashboard?id=ms-aumento-voto
-ceTaskId=AZYOAbOUAsGVH2xwjH0t
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZYOAbOUAsGVH2xwjH0t
